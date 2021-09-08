@@ -1,0 +1,7 @@
+const ActionTypes = {
+  FETCH_POKE_LOADING: 'FETCH_POKE_LOADING',
+  FETCH_POKE_SUCCESS: 'FETCH_POKE_SUCCESS',
+  FETCH_POKE_FAILURE: 'FETCH_POKE_FAILURE',
+};
+
+export default ActionTypes;
