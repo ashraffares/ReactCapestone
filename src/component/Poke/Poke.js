@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 import styles from './Poke.module.css';
 
@@ -10,7 +11,7 @@ const Poke = ({ pokemon, id }) => {
         <img className={styles.img} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`} alt={name} />
         <span className={styles.title}>{name}</span>
       </div>
-      <button type="button" value={id} className={styles.btn}>View</button>
+      <Link to={`/pokemon/${name}/${id}`} value={id} className={styles.link}>View</Link>
     </div>
   );
 };

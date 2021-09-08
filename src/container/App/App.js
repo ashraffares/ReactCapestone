@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-import Poke from '../../component/Poke';
+import PokeInfo from '../../component/PokeInfo';
 import PokeList from '../../component/PokeList';
 import Navbar from '../../component/navbar';
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={PokeList} exact />
-        <Route path="/pokemon/:pokemon" component={Poke} />
+        <Route path="/pokemon/:pokemon/:id" component={PokeInfo} />
       </Switch>
     </div>
   );

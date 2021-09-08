@@ -32,7 +32,8 @@
   font-weight: bold;
 }
 
-.btn {
+.link {
+  text-decoration: none;
   border: 1px solid turquoise;
   background: transparent;
   color: turquoise;
