@@ -10,7 +10,7 @@ const Poke = ({ pokemon, id }) => {
         <img className={styles.img} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`} alt={name} />
         <span className={styles.title}>{name}</span>
       </div>
-      <button type="button" className={styles.btn}>View</button>
+      <button type="button" value={id} className={styles.btn}>View</button>
     </div>
   );
 };
