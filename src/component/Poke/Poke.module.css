@@ -33,11 +33,19 @@
 }
 
 .btn {
-  border: none;
+  border: 1px solid turquoise;
   background: transparent;
-  color: dodgerblue;
+  color: turquoise;
   cursor: pointer;
   font-size: medium;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: turquoise;
+  color: #fff;
+  font-weight: bold;
 }
 
 .img:hover {

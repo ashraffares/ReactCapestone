@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 const Navbar = () => (
-  <NavLink className={styles.navbar} to="/">Pokemon</NavLink>
+  <nav className={styles.navbar}>
+    <NavLink className={styles.links} to="/">Pokemon</NavLink>
+  </nav>
 );
 
 export default Navbar;
