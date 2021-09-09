@@ -9,21 +9,27 @@ import styles from './PokeInfo.module.css';
 
 const PokeInfo = () => {
   const dispatch = useDispatch();
-  const state = useSelector((state) => state.getInfoReducer);
+  const state = useSelector((state) => state);
   const { pokemon, id } = useParams();
 
   useEffect(() => {
     dispatch(FetchPokeInfo(id, pokemon));
   }, []);
-  console.log(state.data);
+
+  const list = state.getInfoReducer.data;
+  const listOfValues = Object.values(list);
+  const pokemonInfo = listOfValues.filter((obj) => obj.name === pokemon);
+
   const RenderPokeInfo = () => {
     if (state.loading) {
       return <h1 className={styles.loading}>Loading ...</h1>;
     }
-    if (state.error) {
-      return <h1>Something went wrong try again!</h1>;
+
+    if (pokemonInfo[0]) {
+      return <Info pokemon={pokemonInfo[0]} />;
     }
-    return state.data.map((poke) => <Info key={id} poke={poke} />);
+
+    return <h1>Something went wrong try again!</h1>;
   };
 
   return (
