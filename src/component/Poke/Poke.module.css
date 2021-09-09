@@ -43,7 +43,7 @@
   border-radius: 8px;
 }
 
-.btn:hover {
+.link:hover {
   background-color: turquoise;
   color: #fff;
   font-weight: bold;
