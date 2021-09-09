@@ -1,12 +1,15 @@
 import ActionTypes from '../actions/ActionTypes';
 
 const initialState = {
-  data: {},
+  data: [],
   loading: false,
   error: null,
 };
 
 const getInfoReducer = (state = initialState, action) => {
+  const key = action.pokemonName;
+  const info = {};
+  info[key] = action.payload;
   switch (action.type) {
     case ActionTypes.FETCH_POKE_INFO_LOADING:
       return {
@@ -17,10 +20,10 @@ const getInfoReducer = (state = initialState, action) => {
     case ActionTypes.FETCH_POKE_INFO_SUCCESS:
       return {
         ...state,
-        data: {
+        data: [
           ...state.data,
-          [action.pokemonName]: action.payload,
-        },
+          info,
+        ],
         loading: false,
         error: null,
       };

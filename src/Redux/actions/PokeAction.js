@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import axios from 'axios';
 import ActionTypes from './ActionTypes';
 
@@ -27,6 +28,7 @@ export const FetchPokeInfo = (id, name) => async (dispatch) => {
 
   try {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    console.log(response.data);
     dispatch({
       type: ActionTypes.FETCH_POKE_INFO_SUCCESS,
       payload: response.data,
