@@ -20,7 +20,7 @@ export const FetchPokeData = () => async (dispatch) => {
   }
 };
 
-export const FetchPokeInfo = (id) => async (dispatch) => {
+export const FetchPokeInfo = (id, name) => async (dispatch) => {
   dispatch({
     type: ActionTypes.FETCH_POKE_LOADING,
   });
@@ -30,6 +30,7 @@ export const FetchPokeInfo = (id) => async (dispatch) => {
     dispatch({
       type: ActionTypes.FETCH_POKE_INFO_SUCCESS,
       payload: response.data,
+      pokemonName: name,
     });
   } catch (error) {
     dispatch({

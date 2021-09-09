@@ -1,7 +1,7 @@
 import ActionTypes from '../actions/ActionTypes';
 
 const initialState = {
-  pokemon: [],
+  data: {},
   loading: false,
   error: null,
 };
@@ -17,7 +17,10 @@ const getInfoReducer = (state = initialState, action) => {
     case ActionTypes.FETCH_POKE_INFO_SUCCESS:
       return {
         ...state,
-        pokemon: action.payload,
+        data: {
+          ...state.data,
+          [action.pokemonName]: action.payload,
+        },
         loading: false,
         error: null,
       };
