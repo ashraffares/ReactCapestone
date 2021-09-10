@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* eslint-disable camelcase */
 import React from 'react';
 import propTypes from 'prop-types';
@@ -33,7 +32,8 @@ const Info = ({ pokemon }) => {
         <h3 className={styles.headers}>Abilites: </h3>
         <ol type="I" className={styles.ul}>
           {
-          abilities.map((el) => <li className={styles.li} key={name}>{el.ability.name}</li>)
+          abilities.map((el) => (
+            <li className={styles.li} key={el.ability.name}>{el.ability.name}</li>))
           }
         </ol>
       </div>
@@ -42,7 +42,7 @@ const Info = ({ pokemon }) => {
         <h3 className={styles.headers}>Moves: </h3>
         <ol type="I" className={styles.ul}>
           {
-            moves.map((el) => <li className={styles.li} key={name}>{el.move.name}</li>)
+            moves.map((el) => <li className={styles.li} key={el.move.name}>{el.move.name}</li>)
           }
         </ol>
       </div>
