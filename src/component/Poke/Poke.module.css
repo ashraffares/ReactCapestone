@@ -50,7 +50,7 @@
 }
 
 .img:hover {
-  transition: 1.5s;
+  transition: 2s;
   content: url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png');
   max-width: 20vw;
   max-height: 10vh;

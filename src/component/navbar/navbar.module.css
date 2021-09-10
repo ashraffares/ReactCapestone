@@ -5,6 +5,14 @@
   background: turquoise;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 83vw;
+  margin: auto;
+  padding: 15px;
+}
+
 .links {
   text-decoration: none;
   padding: 0 10px;
