@@ -7,7 +7,7 @@ export const FetchPokeData = () => async (dispatch) => {
   });
 
   try {
-    const response = await axios.get('https://pokeapi.co/api/v2/pokemon/');
+    const response = await axios.get('https://pokeapi.co/api/v2/pokemon/?limit=300');
     dispatch({
       type: ActionTypes.FETCH_POKE_SUCCESS,
       payload: response.data.results,
