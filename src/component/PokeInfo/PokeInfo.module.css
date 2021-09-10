@@ -1,3 +1,16 @@
 .PokeInfo {
   margin: 0;
 }
+
+.notFound {
+  padding: 50px;
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.notFound span {
+  padding: 0 5px;
+}

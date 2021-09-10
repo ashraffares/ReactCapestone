@@ -29,7 +29,14 @@ const PokeInfo = () => {
       return <Info pokemon={pokemonInfo[0]} />;
     }
 
-    return null;
+    return (
+      <h1 className={styles.notFound}>
+        Sorry, can&apos;t find a pokemon with this name:
+        <span>
+          { pokemon }
+        </span>
+      </h1>
+    );
   };
 
   return (
