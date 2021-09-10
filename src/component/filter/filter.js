@@ -1,17 +1,18 @@
 /* eslint-disable no-console */
 import React from 'react';
-import styles from './filter.module.css';
+import { useDispatch } from 'react-redux';
 
-const Filter = () => (
-  <div className={styles.container}>
-    <label htmlFor="filter">
-      <select className={styles.select} name="filter" id="filter" onChange={(e) => console.log(e.target.value)}>
-        <option value="All">All</option>
-        <option value="Width">Width</option>
-        <option value="Height">Height</option>
+const Filter = () => {
+  const dispatch = useDispatch();
+  return (
+    <label htmlFor="Sort">
+      <select name="Sort" id="Sort" onChange={(e) => dispatch(e)}>
+        <option value="Default">Default</option>
+        <option value="Alphabetically">Alphabetically</option>
+        <option value="Reverse">Reverse</option>
       </select>
     </label>
-  </div>
-);
+  );
+};
 
 export default Filter;

@@ -5,7 +5,6 @@ import propTypes from 'prop-types';
 import styles from './info.module.css';
 
 const Info = ({ pokemon }) => {
-  console.log(pokemon);
   const {
     name, height, weight, base_experience, sprites, abilities, moves,
   } = pokemon;
