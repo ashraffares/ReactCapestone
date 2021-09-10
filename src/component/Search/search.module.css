@@ -1,15 +1,27 @@
-.filter {
-  margin: 0;
+.Search {
+  margin: auto;
 }
 
-.select {
-  width: 8rem;
-  padding: 5px 10px;
+.input {
+  outline: none;
   border: none;
-  background-color: #fff;
+  padding: 8px 30px;
+  margin: 0 5px;
   border-radius: 5px;
 }
 
-.select:focus {
-  outline: none;
+.btn {
+  text-decoration: none;
+  color: turquoise;
+  font-size: 17px;
+  font-weight: bolder;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  background-color: turquoise;
+  color: #fff;
 }
