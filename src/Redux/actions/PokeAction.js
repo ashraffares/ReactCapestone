@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import axios from 'axios';
 import ActionTypes from './ActionTypes';
 
@@ -21,13 +20,13 @@ export const FetchPokeData = () => async (dispatch) => {
   }
 };
 
-export const FetchPokeInfo = (id, name) => async (dispatch) => {
+export const FetchPokeInfo = (name) => async (dispatch) => {
   dispatch({
     type: ActionTypes.FETCH_POKE_LOADING,
   });
 
   try {
-    const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
     dispatch({
       type: ActionTypes.FETCH_POKE_INFO_SUCCESS,
       payload: response.data,
@@ -40,15 +39,3 @@ export const FetchPokeInfo = (id, name) => async (dispatch) => {
     });
   }
 };
-
-export const SortDefault = () => ({
-  type: ActionTypes.SORT_DEFAULT,
-});
-
-export const SortAlphabitically = () => ({
-  type: ActionTypes.SORT_ALPHABETICALLY,
-});
-
-export const sortReverse = () => ({
-  type: ActionTypes.SORT_REVERSE,
-});

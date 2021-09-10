@@ -10,10 +10,10 @@ import styles from './PokeInfo.module.css';
 const PokeInfo = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  const { pokemon, id } = useParams();
+  const { pokemon } = useParams();
 
   useEffect(() => {
-    dispatch(FetchPokeInfo(id, pokemon));
+    dispatch(FetchPokeInfo(pokemon));
   }, []);
 
   const list = state.getInfoReducer.data;
@@ -29,7 +29,7 @@ const PokeInfo = () => {
       return <Info pokemon={pokemonInfo[0]} />;
     }
 
-    return <h1>Something went wrong try again!</h1>;
+    return null;
   };
 
   return (

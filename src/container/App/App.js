@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import PokeInfo from '../../component/PokeInfo';
 import PokeList from '../../component/PokeList';
 import Navbar from '../../component/navbar';
@@ -10,7 +10,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={PokeList} exact />
-        <Route path="/pokemon/:pokemon/:id" component={PokeInfo} />
+        <Route path="/pokemon/:pokemon" component={PokeInfo} />
+        <Redirect to="/" />
       </Switch>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Filter from '../filter';
+import Filter from '../Search';
 import styles from './navbar.module.css';
 
 const Navbar = () => (
