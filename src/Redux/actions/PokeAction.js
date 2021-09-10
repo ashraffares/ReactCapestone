@@ -40,3 +40,15 @@ export const FetchPokeInfo = (id, name) => async (dispatch) => {
     });
   }
 };
+
+export const SortDefault = () => ({
+  type: ActionTypes.SORT_DEFAULT,
+});
+
+export const SortAlphabitically = () => ({
+  type: ActionTypes.SORT_ALPHABETICALLY,
+});
+
+export const sortReverse = () => ({
+  type: ActionTypes.SORT_REVERSE,
+});
