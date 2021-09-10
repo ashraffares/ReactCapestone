@@ -1,0 +1,15 @@
+.filter {
+  margin: 0;
+}
+
+.select {
+  width: 8rem;
+  padding: 5px 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.select:focus {
+  outline: none;
+}
