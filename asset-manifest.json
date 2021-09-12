@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactCapestone/static/css/main.c996944b.chunk.css",
-    "main.js": "/ReactCapestone/static/js/main.36dba97b.chunk.js",
-    "main.js.map": "/ReactCapestone/static/js/main.36dba97b.chunk.js.map",
+    "main.js": "/ReactCapestone/static/js/main.445396eb.chunk.js",
+    "main.js.map": "/ReactCapestone/static/js/main.445396eb.chunk.js.map",
     "runtime-main.js": "/ReactCapestone/static/js/runtime-main.45d31934.js",
     "runtime-main.js.map": "/ReactCapestone/static/js/runtime-main.45d31934.js.map",
     "static/js/2.28cbbe17.chunk.js": "/ReactCapestone/static/js/2.28cbbe17.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.45d31934.js",
     "static/js/2.28cbbe17.chunk.js",
     "static/css/main.c996944b.chunk.css",
-    "static/js/main.36dba97b.chunk.js"
+    "static/js/main.445396eb.chunk.js"
   ]
 }
