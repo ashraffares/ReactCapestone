@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchPokeData } from '../../Redux/actions/PokeAction';
-import Poke from '../Poke';
+import Poke from '../../component/Poke';
 import styles from './PokeList.module.css';
 
 const PokeList = () => {
