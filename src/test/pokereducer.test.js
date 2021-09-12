@@ -34,3 +34,12 @@ test('Should return object with items have object', () => {
 
   expect(res).toEqual({ items: { name: 'bublasaur', url: '/bulbasaur/1' }, loading: false, error: null });
 });
+
+test('Should return default', () => {
+  const res = PokeReducer(initialState,
+    {
+      type: '',
+    });
+
+  expect(res).toEqual(initialState);
+});

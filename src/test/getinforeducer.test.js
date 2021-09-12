@@ -35,3 +35,12 @@ test('Should return object with pokemon info data', () => {
 
   expect(res).toEqual({ data: { bulbasaur: { id: 0, name: 'bulbasaur' } }, loading: false, error: null });
 });
+
+test('Should return default', () => {
+  const res = getInfoReducer(initialState,
+    {
+      type: '',
+    });
+
+  expect(res).toEqual(initialState);
+});
