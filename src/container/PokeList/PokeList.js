@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchPokeData } from '../../Redux/actions/PokeAction';
@@ -12,7 +11,6 @@ const PokeList = () => {
   useEffect(() => {
     dispatch(FetchPokeData());
   }, []);
-  console.log(state);
   const RenderPokeList = () => {
     if (state.loading) {
       return <h1 className={styles.loading}>loading ...</h1>;
