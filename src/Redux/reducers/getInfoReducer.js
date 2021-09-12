@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 import ActionTypes from '../actions/ActionTypes';
 
 const initialState = {

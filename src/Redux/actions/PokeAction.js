@@ -34,7 +34,7 @@ export const FetchPokeInfo = (name) => async (dispatch) => {
     });
   } catch (error) {
     dispatch({
-      type: ActionTypes.FETCH_POKE_FAILURE,
+      type: ActionTypes.FETCH_POKE_INFO_FAILURE,
       error,
     });
   }
