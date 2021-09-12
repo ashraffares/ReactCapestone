@@ -15,7 +15,7 @@ it's SPA App that fetches poke API and saves the data in Redux and contains to p
 ## Getting Started
 To get a local copy up and running follow these simple example steps on the command line.
 
-## Clone the project from it's github repo.
+## Clone the project from its github repo.
 
 > ### $ git clone https://github.com/ashraffares/ReactCapestone.git
   
