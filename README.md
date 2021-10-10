@@ -1,3 +1,6 @@
+![React App (4)](https://user-images.githubusercontent.com/37639594/136703586-bb01df56-ce8c-42d6-8b77-97bf39d98020.png)
+![React App (3)](https://user-images.githubusercontent.com/37639594/136703592-47591f27-513c-481a-8e8c-a4663fef8adb.png)
+
 ## Pokemon catalog
 it's SPA App that fetches poke API and saves the data in Redux and contains to pages the main page that holds the catalog and info page.
 
